@@ -1,0 +1,10 @@
+.header-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    gap: 1.25rem;
+    color: white;
+}

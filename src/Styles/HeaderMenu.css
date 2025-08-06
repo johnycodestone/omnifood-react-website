@@ -1,0 +1,26 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
+.header-logo {
+    width: 20vmin;
+    height: 20vmin;
+}
+
+@media (max-width: 700px) {
+    .header-menu {
+        font-size: 1rem;
+    }
+}
