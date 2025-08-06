@@ -1,0 +1,29 @@
+.colored {
+    background-color: #e67e22;
+    color: #fff;   
+    border: none; 
+}
+
+.colored:hover {
+    background-color: #d35400;
+    color: #fff;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #e67e22;
+    border: 1.5px solid #e67e22;
+}
+
+.transparent:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+#btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

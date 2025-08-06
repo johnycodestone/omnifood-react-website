@@ -1,10 +1,12 @@
-import './App.css';
-import React from 'react';
-import HeaderMenu from "./Components/HeaderMenu";
+import "./App.css";
+import React from "react";
+import HeroSection from "./Components/HeroSection";
 
 function App() {
   return (
-    <HeaderMenu />
+    <div className="home-page">
+      <HeroSection />
+    </div>
   );
 }
 
