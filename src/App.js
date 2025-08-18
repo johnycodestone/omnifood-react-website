@@ -3,6 +3,7 @@ import React from "react";
 import HeroSection from "./Components/HeroSection";
 import QualitiesSection from "./Components/QualitiesSection";
 import ImageGrid from "./Components/ImageGrid";
+import StepsSection from "./Components/StepsSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <QualitiesSection />
       <ImageGrid />
+      <StepsSection />
     </div>
   );
 }

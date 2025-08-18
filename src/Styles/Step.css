@@ -1,0 +1,36 @@
+.step-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    color: #e67e22;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    font-size: 150%;
+}
+
+.number-circle {
+    border: 2px solid #e67e22;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: #e67e22;
+}
+
+.step-title {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+    .steps-title {
+        font-size: 1rem;
+    }
+}
