@@ -1,0 +1,69 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns - occupy 1 fraction each */
+    grid-template-rows: repeat(2, 1fr);
+    /* 2 equal rows */
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2rem 0;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 equal columns */
+    }
+}
+
+.image-grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.5s ease-out;
+    /* fade effect */
+    pointer-events: none;
+    /* let pointer pass to img/container */
+    z-index: 1;
+    /* sit above the img */
+}
+
+.image-grid-item {
+    position: relative;
+    overflow: hidden; /* Ensures images don't overflow their grid item */
+}
+
+.image-grid-item .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures images cover the grid item without distortion */
+    display: block;
+    /* Removes bottom space in images */
+    transition: transform 0.5s ease-out;
+    /* Smooth transition for the zoom effect */
+    z-index: 0;
+    /* Ensures the image is below any overlay */
+    position: relative;
+    /* Required for the overlay to position correctly */
+}
+
+
+
+.image-grid-item:hover .img {
+    transform: scale(1.15);
+    /* Slight zoom effect on hover */
+}
+
+.image-grid-item:hover::before {
+    opacity: 0;
+    /* Fade out the overlay on hover */
+}

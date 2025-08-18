@@ -10,6 +10,15 @@
     font-size: 1.25rem;
 }
 
+.header-menu-item {
+    transition: all 0.3s ease;
+}
+
+.header-menu-item:hover {
+    color: #ff6347; /* Change to your desired hover color */
+    cursor: pointer;
+}
+
 @media (max-width: 800px) {
     .header-menu-list {
         font-size: 1rem;
