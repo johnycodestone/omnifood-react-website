@@ -1,0 +1,46 @@
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 80vh;
+    width: 100%;
+    background-image: url('../Assets/Images/back-customers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.reviews-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.reviews-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+}

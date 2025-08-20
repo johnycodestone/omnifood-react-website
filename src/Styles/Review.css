@@ -1,0 +1,33 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.colon {
+    font-size: 4rem;
+}
+
+.review-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;;
+}
+
+.reviewer-name {
+    font-size: 1.4rem;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

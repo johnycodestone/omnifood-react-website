@@ -40,6 +40,7 @@ const CitiesSection = () => {
   return (
     <section className="cities-section">
       <Heading title={title} color={color} />
+      <hr style={{backgroundColor: '#e67e22', width: '100px', height: '3px', border: 'none', borderRadius: '5px', marginBottom: '20px'}} />
       <div className="cities-container">
         {cities.map((city, index) => (
           <CityInfo

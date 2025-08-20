@@ -6,6 +6,7 @@ import QualitiesSection from "./Components/QualitiesSection";
 import ImageGrid from "./Components/ImageGrid";
 import StepsSection from "./Components/StepsSection";
 import CitiesSection from "./Components/CitiesSection";
+import ReviewsSection from "./Components/ReviewsSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ImageGrid />
       <StepsSection />
       <CitiesSection />
+      <ReviewsSection />
     </div>
   );
 }
