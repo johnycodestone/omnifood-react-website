@@ -1,0 +1,24 @@
+.cities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+    min-height: 80vh;
+    width: 100%;
+    gap: 2rem;
+}
+
+.cities-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .cities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
