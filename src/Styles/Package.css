@@ -7,6 +7,12 @@
     border-radius: 18px;
 }
 
+@media (max-width: 800px) {
+    .package {
+            min-width: 40vw;
+    }
+}
+
 .box-top {
     display: flex;
     flex-direction: column;

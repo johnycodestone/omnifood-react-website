@@ -8,6 +8,8 @@ import StepsSection from "./Components/StepsSection";
 import CitiesSection from "./Components/CitiesSection";
 import ReviewsSection from "./Components/ReviewsSection";
 import PackagesSection from "./Components/PackagesSection";
+import FormsSection from "./Components/FormsSection";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <CitiesSection />
       <ReviewsSection />
       <PackagesSection />
+      <FormsSection />
+      <Footer />
     </div>
   );
 }
